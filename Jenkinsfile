@@ -16,7 +16,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'Cosas de construcción'
+                sh 'echo Cosas de construcción'
                 // sh 'python manage.py collectstatic --noinput'
             }
         }
