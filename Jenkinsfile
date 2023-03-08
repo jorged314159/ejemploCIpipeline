@@ -17,7 +17,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'echo Cosas de construcción'
-                // sh 'python manage.py collectstatic --noinput'
+                sh 'python3 manage.py collectstatic --noinput'
+                sh 'echo Se construye imagen de Docker con todas las dependencias y la aplicación'
             }
         }
         stage('despliegue-pre') {
