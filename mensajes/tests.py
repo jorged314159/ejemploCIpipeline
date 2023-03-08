@@ -2,7 +2,6 @@ from django.test import TestCase
 
 
 class TestHola(TestCase):
-    
     def test_humo(self):
         self.assertEqual(2, 1+1)
 
